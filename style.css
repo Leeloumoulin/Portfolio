@@ -1,0 +1,69 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: cadre-box;
+}
+
+body {
+  background-color: rgb(10, 20, 18);
+  cursor: url(assets/cursor.png), auto;
+}
+
+/* Cadre et bordure*/
+
+.cadre_hero {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  z-index: 4;
+}
+.cadre_left {
+  margin-left: 2vw;
+  top: 0;
+  width: 1px;
+  height: 100%;
+}
+.cadre_top {
+  margin-top: 5vh;
+  width: 100%;
+  height: 1px;
+}
+
+.bordure {
+  position: fixed;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+}
+.bordure_top,
+.bordure_bottom {
+  position: absolute;
+  height: 5vh;
+  width: 100%;
+  background-color: rgb(31, 31, 31);
+}
+
+.bordure_left,
+.bordure_right {
+  position: absolute;
+  height: 100%;
+  width: 2vw;
+  background-color: rgb(31, 31, 31);
+}
+
+.bordure_top {
+  top: 0;
+}
+.bordure_bottom {
+  bottom: 0;
+}
+
+.bordure_left {
+  left: 0;
+}
+
+.bordure_right {
+  right: 0;
+}
+
+/* Fin cadre /bordure */
