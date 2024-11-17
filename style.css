@@ -6,16 +6,33 @@
 }
 
 body {
-  background-color: rgb(10, 20, 18);
   cursor: url(assets/cursor.png), auto;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  width: 80%;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.flex {
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.alignitems {
+  align-items: center;
 }
 
 /* Cadre et bordure*/
 
 .cadre_hero {
   position: fixed;
-  background-color: rgb(255, 255, 255);
-  z-index: 4;
+  background-color: rgba(255, 255, 255, 0.527);
 }
 .cadre_left {
   margin-left: 2vw;
@@ -31,16 +48,18 @@ body {
 
 .bordure {
   position: fixed;
-  z-index: 5;
+  z-index: 1;
   width: 100%;
   height: 100%;
 }
+
 .bordure_top,
 .bordure_bottom {
   position: absolute;
   height: 5vh;
   width: 100%;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(13, 13, 17);
+  cursor: none;
 }
 
 .bordure_left,
@@ -48,7 +67,8 @@ body {
   position: absolute;
   height: 100%;
   width: 2vw;
-  background-color: rgb(31, 31, 31);
+  background-color: rgb(13, 13, 17);
+  cursor: none;
 }
 
 .bordure_top {
@@ -66,4 +86,13 @@ body {
   right: 0;
 }
 
-/* Fin cadre /bordure */
+/* Fin cadre / bordure */
+
+/* Début main */
+
+main {
+  background-image: url(assets/pixel_room.png);
+  background-position: center;
+  object-fit: cover;
+  height: 95vh;
+}
