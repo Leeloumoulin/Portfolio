@@ -1,18 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+
 /* Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: cadre-box;
+  color: white;
+  font-family: "Pixelify Sans", sans-serif;
 }
 
 body {
-  cursor: url(assets/cursor.png), auto;
+  background-image: url(assets/pixel_room.png);
+  background-position: center;
+  object-fit:cover;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1500px;
   margin: auto;
-  width: 80%;
+  width: 90%;
+  height: 100%;
 }
 
 .space_between {
@@ -27,6 +38,19 @@ body {
 .alignitems {
   align-items: center;
 }
+
+a {
+  position: relative;
+  z-index: 5;
+}
+
+.bouton {
+  background-color: black;
+  border: solid 1px white;
+  border-radius: 15px;
+  padding: 10px 20px;
+}
+
 
 /* Cadre et bordure*/
 
@@ -59,7 +83,6 @@ body {
   height: 5vh;
   width: 100%;
   background-color: rgb(13, 13, 17);
-  cursor: none;
 }
 
 .bordure_left,
@@ -68,7 +91,6 @@ body {
   height: 100%;
   width: 2vw;
   background-color: rgb(13, 13, 17);
-  cursor: none;
 }
 
 .bordure_top {
@@ -88,11 +110,51 @@ body {
 
 /* Fin cadre / bordure */
 
+/* Début header */
+
+header {
+  margin-top: 20vh;
+}
+header h1 {
+  padding-bottom: 30px;
+}
+
+header h2 {
+  font-size: 50px;
+  padding-bottom: 100px;
+}
+
+/* Fin header */
+
 /* Début main */
 
-main {
-  background-image: url(assets/pixel_room.png);
-  background-position: center;
-  object-fit: cover;
-  height: 95vh;
+.navig {
+  margin-top: 25%;
+}
+
+.nav {
+  position: relative;
+}
+
+.nav img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  opacity: 70%;
+}
+
+.nav h4 {
+  position: absolute;
+  left: 50%;
+  bottom: 290%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+}
+
+
+.imgpersonnage {
+  position: fixed;
+  width: 500px;
+  bottom: 20px;
+  right: 100px;
 }

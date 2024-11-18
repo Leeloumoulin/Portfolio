@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- Cadre -->
-    <section>
-      <div class="bordure">
-        <div class="bordure_top"></div>
-        <div class="bordure_bottom"></div>
-        <div class="bordure_left"></div>
-        <div class="bordure_right"></div>
-      </div>
 
-      <div class="cadre">
-        <div class="cadre_hero cadre_top"></div>
-        <div class="cadre_hero cadre_left"></div>
-      </div>
-    </section>
-    <!-- Fin cadre -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio</title>
+</head>
 
+<body>
+  <!-- Cadre -->
+  <section>
+    <div class="bordure">
+      <div class="bordure_top"></div>
+      <div class="bordure_bottom"></div>
+      <div class="bordure_left"></div>
+      <div class="bordure_right"></div>
+    </div>
+
+    <div class="cadre">
+      <div class="cadre_hero cadre_top"></div>
+      <div class="cadre_hero cadre_left"></div>
+    </div>
+  </section>
+  <!-- Fin cadre -->
+  <section class="container flex space_between">
     <header>
       <div>
-        <h1></h1>
-        <h2></h2>
+        <h1>Leelou Moulin</h1>
+        <h2> > Developpeuse Web</h2>
+        <a href="https://github.com/Leeloumoulin?tab=repositories" title="Lien vers mon Github" class="bouton github">Github</a>
       </div>
     </header>
 
     <main>
-      <section>
+      <section class="navig">
         <div>
           <ul>
             <li>
-              <a href="" title=""><img src="" alt="" /></a>
+              <a href="les_projets.html" title="Lien vers les projets" class="nav"><img src="assets/Bouton_peinture.png" alt="Bouton vers les projets">
+                <h4>Projets</h4>
+              </a>
             </li>
             <li>
-              <a href="" title=""><img src="" alt="" /></a>
+              <a href="" title="Lien vers la page à propos" class="nav"> <img src="assets/Bouton_peinture.png" alt="Bouton vers page à propos">
+                <h4>A propos</h4>
+              </a>
             </li>
           </ul>
         </div>
-        <img src="" alt="" />
+        <img src="assets/Pixel_personnage.png" alt="" class="imgpersonnage" />
       </section>
     </main>
+  </section>
 
-    <footer>
-      <a href="" title=""></a>
-    </footer>
-  </body>
+  <footer>
+  </footer>
+</body>
+
 </html>
