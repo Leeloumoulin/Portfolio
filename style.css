@@ -1,20 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pixelify+Sans:wght@400..700&display=swap");
 
 /* Global */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: cadre-box;
+  box-sizing: border-box;
   color: white;
   font-family: "Pixelify Sans", sans-serif;
 }
-
 
 body {
   background-image: url(assets/pixel_room.png);
   background-position: center;
   object-fit: cover;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 li {
@@ -56,7 +56,6 @@ a {
   border-radius: 15px;
   padding: 10px 20px;
 }
-
 
 /* Cadre et bordure*/
 
@@ -155,14 +154,14 @@ header h2 {
   margin-bottom: 20px;
   opacity: 70%;
   -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .navig :hover a img {
-	-webkit-transform: scale(1.3);
-	transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .nav h4 {
@@ -173,7 +172,6 @@ header h2 {
   font-size: 25px;
 }
 
-
 .imgpersonnage {
   position: fixed;
   width: 500px;
@@ -181,12 +179,11 @@ header h2 {
   right: 100px;
 }
 
- .p1 a img {
+.p1 a img {
   height: 50px;
   background-color: white;
   border-radius: 50%;
- }
-
+}
 
 /* Fin page 1 */
 /* Page 2 */
@@ -197,34 +194,33 @@ header h2 {
 }
 
 .card {
-  display: flex; 
-  flex-direction: column; 
-  border-radius: 16px  16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px 16px 16px 16px;
   width: 200px;
-  box-shadow: 2px 7px 13px 0px rgba(0,0,0,0.2);
-  overflow: hidden; 
+  box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
   z-index: 2;
   border-color: #000000;
   padding-bottom: 10px;
 }
-.card-body{
+.card-body {
   background-color: #ffffff;
   flex-grow: 1;
-  padding: 10px; 
+  padding: 10px;
 }
 
-.card-title{
+.card-title {
   color: #000000;
   font-weight: bold;
   font-size: 18px;
-  margin: 0px; 
-  padding: 0px; 
-   
+  margin: 0px;
+  padding: 0px;
 }
-.card-text{
+.card-text {
   line-height: 1.3;
   font-family: "Inter", serif;
-  margin: 10px 0px 0px 0px; 
+  margin: 10px 0px 0px 0px;
   font-size: 12px;
   color: #000000;
 }
