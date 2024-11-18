@@ -9,6 +9,7 @@
   font-family: "Pixelify Sans", sans-serif;
 }
 
+
 body {
   background-image: url(assets/pixel_room.png);
   background-position: center;
@@ -70,11 +71,18 @@ a {
   height: 1px;
 }
 
+.cadre_top_p2 {
+  top: 0px;
+  width: 100%;
+  height: 1px;
+}
+
 .bordure {
   position: fixed;
   z-index: 1;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 
 .bordure_top,
@@ -110,7 +118,7 @@ a {
 
 /* Fin cadre / bordure */
 
-/* Début header */
+/* Début header page 1 */
 
 header {
   margin-top: 20vh;
@@ -126,7 +134,7 @@ header h2 {
 
 /* Fin header */
 
-/* Début main */
+/* Début main page 1 */
 
 .navig {
   margin-top: 25%;
@@ -136,11 +144,20 @@ header h2 {
   position: relative;
 }
 
-.nav img {
+.navig a img {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
   opacity: 70%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.navig :hover a img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .nav h4 {
@@ -157,4 +174,16 @@ header h2 {
   width: 500px;
   bottom: 20px;
   right: 100px;
+  
 }
+
+
+
+/* Fin page 1 */
+/* Page 2 */
+
+.chevron_retour {
+  height: 100px;
+  filter: brightness(2);
+}
+
