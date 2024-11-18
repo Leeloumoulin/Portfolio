@@ -193,7 +193,7 @@ header h2 {
 
 .chevron_retour {
   height: 100px;
-  filter: brightness(2);
+  filter: brightness(5);
 }
 
 .card {
