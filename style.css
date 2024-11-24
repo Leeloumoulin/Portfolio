@@ -144,11 +144,7 @@ header h2 {
   margin-top: 25%;
 }
 
-.nav {
-  position: relative;
-}
-
-.navig a img {
+.navig a {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
@@ -157,18 +153,18 @@ header h2 {
   transform: scale(1);
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-.navig :hover a img {
+.navig a :hover {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
 
-.nav h4 {
-  position: absolute;
-  left: 50%;
-  bottom: 290%;
-  transform: translate(-50%, -50%);
+.navig h4 {
+  position: relative;
+  left: 80%;
+  transform: translate(-50%, -270%);
   font-size: 25px;
 }
 
@@ -185,6 +181,10 @@ header h2 {
   border-radius: 50%;
 }
 
+.boutonProjets img {
+  image-orientation: flip;
+}
+
 /* Fin page 1 */
 /* Page 2 */
 
@@ -196,7 +196,7 @@ header h2 {
 .card {
   display: flex;
   flex-direction: column;
-  border-radius: 16px 16px 16px 16px;
+  border-radius: 16px;
   width: 200px;
   box-shadow: 2px 7px 13px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
