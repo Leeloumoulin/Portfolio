@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
     <title>Portfolio</title>
   </head>
 
   <body>
+    <canvas></canvas>
+    <img src="assets/pixel_room.png" alt="" class="bg_img" />
     <!-- Cadre -->
     <section>
       <div class="bordure">
@@ -26,8 +30,8 @@
     <section class="container flex space_between">
       <header>
         <div class="p1">
-          <h1>Leelou Moulin</h1>
-          <h2>> Developpeuse Web</h2>
+          <h1 id="h1-text">Leelou Moulin</h1>
+          <h2 id="h2-text">> Developpeuse Web</h2>
           <a
             href="https://github.com/Leeloumoulin?tab=repositories"
             title="Lien vers mon Github"
@@ -43,11 +47,9 @@
           <div>
             <ul>
               <li>
-                <a
-                  href="les_projets.html"
-                  title="Lien vers les projets"
-                  class="nav"
+                <a href="les_projets.html" title="Lien vers les projets"
                   ><img
+                    class="flip-vertical"
                     src="assets/Bouton_peinture.png"
                     alt="Bouton vers les projets"
                   />
@@ -55,21 +57,18 @@
                 </a>
               </li>
               <li>
-                <a
-                  href=""
-                  title="Lien vers la page à propos"
-                  class="nav boutonProjets"
-                >
+                <a href="" title="Lien vers la page à propos">
                   <img
                     src="assets/Bouton_peinture.png"
-                    alt="Bouton vers page à propos"
+                    alt="Bouton vers la page à propos"
+                    class="flip-horizontally"
                   />
                   <h4>A propos</h4>
                 </a>
               </li>
             </ul>
           </div>
-          <img src="assets/Pixel_personnage.png" alt="" class="imgpersonnage" />
+          <img src="assets/sprite_perso.gif" alt="" class="imgpersonnage" />
         </section>
       </main>
     </section>
