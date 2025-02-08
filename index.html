@@ -6,72 +6,155 @@
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
 
-    <title>Portfolio</title>
+    <title>L.M Portfolio</title>
   </head>
 
   <body>
     <canvas></canvas>
-    <img src="assets/pixel_room.png" alt="" class="bg_img" />
-    <!-- Cadre -->
-    <section>
-      <div class="bordure">
-        <div class="bordure_top"></div>
-        <div class="bordure_bottom"></div>
-        <div class="bordure_left"></div>
-        <div class="bordure_right"></div>
-      </div>
-
-      <div class="cadre">
-        <div class="cadre_hero cadre_top"></div>
-        <div class="cadre_hero cadre_left"></div>
-      </div>
-    </section>
-    <!-- Fin cadre -->
-    <section class="container flex space_between">
-      <header>
-        <div class="p1">
-          <h1 id="h1-text">Leelou Moulin</h1>
-          <h2 id="h2-text">> Developpeuse Web</h2>
-          <a
-            href="https://github.com/Leeloumoulin?tab=repositories"
-            title="Lien vers mon Github"
-            class="bouton"
-            target="_blank"
-            ><img src="assets/gitlogo.png" alt="logo github" />Github</a
-          >
+    <header class="flex space_between w100">
+      <a
+        href="https://github.com/Leeloumoulin"
+        title="Lien vers mon Github"
+        target="_blank"
+        ><img src="assets/pngimg.com - github_PNG65.png" alt="Logo Github"
+      /></a>
+      <a href="" class="btn_header" title="Bouton de contact">Me contacter</a>
+    </header>
+    <main>
+      <section class="hero flex space_between">
+        <!-- Hero -->
+        <div class="hero_bg"></div>
+        <div class="hero_text">
+          <h2>Leelou Moulin</h2>
+          <h1>Developpeuse Web</h1>
         </div>
-      </header>
+        <div class="boutons_hero">
+          <a href=""><button>A propos</button></a>
+          <a href=""><button>Mes projets</button></a>
+        </div>
+      </section>
 
-      <main>
-        <section class="navig">
-          <div>
-            <ul>
+      <section class="flex space_between container">
+        <!-- A propos -->
+        <h3 class="centertext w100">A propos de moi</h3>
+      </section>
+
+      <section class="flex space_between container projets">
+        <!-- PROJETS -->
+        <h3 class="centertext w100">Mes projets</h3>
+        <div class="container_projets">
+          <div class="carousel">
+            <input type="radio" name="slides" checked="checked" id="slide-1" />
+            <input type="radio" name="slides" id="slide-2" />
+            <input type="radio" name="slides" id="slide-3" />
+            <input type="radio" name="slides" id="slide-4" />
+            <input type="radio" name="slides" id="slide-5" />
+            <input type="radio" name="slides" id="slide-6" />
+            <ul class="carousel__slides">
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1041/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Tim Marshall</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1043/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Christian Joudrey</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1044/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Steve Carter</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1045/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Aleksandra Boguslawska</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1049/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Rosan Harmens</span>
+                  </figcaption>
+                </figure>
+              </li>
+              <li class="carousel__slide">
+                <figure>
+                  <div>
+                    <img src="https://picsum.photos/id/1052/800/450" alt="" />
+                  </div>
+                  <figcaption>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    <span class="credit">Photo: Annie Spratt</span>
+                  </figcaption>
+                </figure>
+              </li>
+            </ul>
+            <ul class="carousel__thumbnails">
               <li>
-                <a href="les_projets.html" title="Lien vers les projets"
-                  ><img
-                    class="flip-vertical"
-                    src="assets/Bouton_peinture.png"
-                    alt="Bouton vers les projets"
-                  />
-                  <h4>Projets</h4>
-                </a>
+                <label for="slide-1"
+                  ><img src="https://picsum.photos/id/1041/150/150" alt=""
+                /></label>
               </li>
               <li>
-                <a href="" title="Lien vers la page à propos">
-                  <img
-                    src="assets/Bouton_peinture.png"
-                    alt="Bouton vers la page à propos"
-                    class="flip-horizontally"
-                  />
-                  <h4>A propos</h4>
-                </a>
+                <label for="slide-2"
+                  ><img src="https://picsum.photos/id/1043/150/150" alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-3"
+                  ><img src="https://picsum.photos/id/1044/150/150" alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-4"
+                  ><img src="https://picsum.photos/id/1045/150/150" alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-5"
+                  ><img src="https://picsum.photos/id/1049/150/150" alt=""
+                /></label>
+              </li>
+              <li>
+                <label for="slide-6"
+                  ><img src="https://picsum.photos/id/1052/150/150" alt=""
+                /></label>
               </li>
             </ul>
           </div>
-          <img src="assets/sprite_perso.gif" alt="" class="imgpersonnage" />
-        </section>
-      </main>
-    </section>
+        </div>
+      </section>
+    </main>
+
     <footer></footer>
   </body>
 </html>

@@ -22,44 +22,44 @@ function resize() {
 
 // Classe Particle
 class Particle {
-    constructor() {
-      this.reset();
-    }
-  
-    reset() {
-      this.x = mousePos.x;
-      this.y = mousePos.y;
-      this.radius = Math.random() * 3 + 1; // Taille aléatoire entre 1 et 4
-      this.color = `rgba(0, 255, 0, ${Math.random() * 0.7 + 0.3})`; // Couleur verte avec opacité variable
-      
-      // Limiter la dispersion des particules pour qu'elles ne partent pas dans toutes les directions
-      const angle = Math.random() * Math.PI / 2 - Math.PI / 4; // Angle entre -45° et 45° autour du curseur
-      const speed = Math.random() * 1.5 + 1; // Vitesse modérée
-      
-      this.velocity = {
-        x: Math.cos(angle) * speed, // Déplacement en X basé sur l'angle
-        y: Math.sin(angle) * speed, // Déplacement en Y basé sur l'angle
-      };
-      
-      this.alpha = 1; // Opacité initiale
-    }
-  
-    draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.color.replace(/[\d.]+\)$/g, `${this.alpha})`); // Applique l'alpha
-      ctx.fill();
-    }
-  
-    update() {
-      if (this.alpha > 0) {
-        this.x += this.velocity.x; // Déplacement en X
-        this.y += this.velocity.y; // Déplacement en Y
-      }
-      this.alpha -= 0.04; // Augmenter la vitesse de disparition en réduisant plus rapidement l'alpha
-    }
+  constructor() {
+    this.reset();
   }
-  
+
+  reset() {
+    this.x = mousePos.x;
+    this.y = mousePos.y;
+    this.radius = Math.random() * 3 + 1; // Taille aléatoire entre 1 et 4
+    this.color = `rgba(0, 255, 0, ${Math.random() * 0.7 + 0.3})`; // Couleur verte avec opacité variable
+
+    // Limiter la dispersion des particules pour qu'elles ne partent pas dans toutes les directions
+    const angle = Math.random() * Math.PI / 2 - Math.PI / 4; // Angle entre -45° et 45° autour du curseur
+    const speed = Math.random() * 1.5 + 1; // Vitesse modérée
+
+    this.velocity = {
+      x: Math.cos(angle) * speed, // Déplacement en X basé sur l'angle
+      y: Math.sin(angle) * speed, // Déplacement en Y basé sur l'angle
+    };
+
+    this.alpha = 1; // Opacité initiale
+  }
+
+  draw() {
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color.replace(/[\d.]+\)$/g, `${this.alpha})`); // Applique l'alpha
+    ctx.fill();
+  }
+
+  update() {
+    if (this.alpha > 0) {
+      this.x += this.velocity.x; // Déplacement en X
+      this.y += this.velocity.y; // Déplacement en Y
+    }
+    this.alpha -= 0.04; // Augmenter la vitesse de disparition en réduisant plus rapidement l'alpha
+  }
+}
+
 
 // Fonction pour dessiner les particules
 function draw() {
